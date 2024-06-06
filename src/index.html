@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Review Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero {
+      background-image: url('https://via.placeholder.com/1500x500');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white shadow">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="#" class="text-xl font-bold text-gray-800">College Reviews</a>
+        <div class="mx-10 hidden md:block">
+          <div class="flex space-x-4">
+            <!-- Dropdowns -->
+            <div class="relative group">
+              <button class="text-gray-800">BTech</button>
+              <div class="absolute hidden group-hover:block bg-white shadow-md mt-2">
+                <a href="#" class="block px-4 py-2">Course 1</a>
+                <a href="#" class="block px-4 py-2">Course 2</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <button class="text-gray-800">MTech</button>
+              <div class="absolute hidden group-hover:block bg-white shadow-md mt-2">
+                <a href="#" class="block px-4 py-2">Course 1</a>
+                <a href="#" class="block px-4 py-2">Course 2</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <button class="text-gray-800">BSc</button>
+              <div class="absolute hidden group-hover:block bg-white shadow-md mt-2">
+                <a href="#" class="block px-4 py-2">Course 1</a>
+                <a href="#" class="block px-4 py-2">Course 2</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <button class="text-gray-800">MSc</button>
+              <div class="absolute hidden group-hover:block bg-white shadow-md mt-2">
+                <a href="#" class="block px-4 py-2">Course 1</a>
+                <a href="#" class="block px-4 py-2">Course 2</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <input type="text" class="border rounded-md py-1 px-3 mr-3" placeholder="Search...">
+        <a href="https://wa.me/your-number" target="_blank" class="text-green-500 text-xl">
+          <i class="fab fa-whatsapp"></i> 
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-overlay text-white text-center">
+      <h1 class="text-4xl font-bold mb-4">Find the Best Colleges</h1>
+      <input type="text" class="border rounded-md py-1 px-3" placeholder="Search for colleges...">
+    </div>
+  </div>
+
+  
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</body>
+</html>
